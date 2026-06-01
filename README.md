@@ -13,7 +13,7 @@ brew tap adericbourg/tap
 ### Install a cask
 
 ```sh
-brew install --cask adericbourg/tap/env-starter
+brew install --cask env-starter
 ```
 
 Or in a single step, without adding the tap first:
