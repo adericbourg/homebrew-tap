@@ -4,11 +4,14 @@ A personal [Homebrew](https://brew.sh) tap by [@adericbourg](https://github.com/
 
 ## Usage
 
-### Add this tap
+### Add and trust this tap
 
 ```sh
 brew tap adericbourg/tap
+brew trust --tap adericbourg/tap
 ```
+
+The trust step is required from Homebrew ≥ 6.0.0.
 
 ### Install a cask
 
