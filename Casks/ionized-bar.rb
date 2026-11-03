@@ -17,6 +17,14 @@ cask "ionized-bar" do
 
   app "IonizedBar.app"
 
+  # Self-signed, not notarized: Gatekeeper would block the quarantined app
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/IonizedBar.app"],
+        writable_paths: ["IonizedBar.app"],
+        writable_base:  :appdir
+  end
+
   uninstall quit:       "io.github.adericbourg.ionized-bar",
             login_item: "IonizedBar"
 
@@ -28,13 +36,10 @@ cask "ionized-bar" do
   caveats <<~EOS
     IonizedBar needs macOS 27.2 or later.
 
-    The app is not signed or notarized yet. If macOS refuses to open it:
-      xattr -d com.apple.quarantine /Applications/IonizedBar.app
+    The app is self-signed, not notarized, so this cask removes its
+    Gatekeeper quarantine attribute after installing it.
 
     IonizedBar hides the Dock (autohide in com.apple.dock) while it runs.
     Quitting it or uninstalling the cask restores the Dock.
-
-    After each upgrade, grant the Accessibility permission again in
-    System Settings > Privacy & Security > Accessibility.
   EOS
 end
