@@ -34,6 +34,7 @@ Homebrew resolves the tap automatically from the qualified `<user>/<tap>/<token>
 | [`env-starter`](https://github.com/adericbourg/env-starter) | Keyboard-driven TUI meta-launcher for developer environments | `brew install --cask adericbourg/tap/env-starter` |
 | [`madsister`](https://github.com/adericbourg/madsister) | Turns a song into an editable, printable chord grid (macOS, Apple silicon) | `brew install --cask adericbourg/tap/madsister` |
 | [`madsister-snapshot`](https://github.com/adericbourg/madsister) | Latest unreleased build of madsister, installs next to it | `brew install --cask adericbourg/tap/madsister-snapshot` |
+| [`ionized-bar`](https://github.com/adericbourg/ionized-bar) | KDE Plasma-style taskbar for macOS that replaces the Dock (Apple silicon) | `brew install --cask adericbourg/tap/ionized-bar` |
 
 ## Available formulae
 
