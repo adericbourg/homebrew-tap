@@ -1,6 +1,6 @@
 cask "ionized-bar" do
-  version "0.6.0"
-  sha256 "152e2701386051a87085d6c1f68de4c22653e9b3e56999270c07fa3c04a065c5" # sha256 printed by scripts/archive.sh / shown on the v0.1.0 release
+  version "0.7.0"
+  sha256 "b0c8ad399662474f33c860c4070c9985530ef4d78221be82861bec27360bdf78" # sha256 printed by scripts/archive.sh / shown on the v0.1.0 release
 
   url "https://github.com/adericbourg/ionized-bar/releases/download/v#{version}/IonizedBar-#{version}.zip"
   name "Ionized Bar"
