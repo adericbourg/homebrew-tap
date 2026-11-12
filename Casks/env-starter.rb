@@ -6,25 +6,25 @@ cask "env-starter" do
     end
   end
 
-  version "1.9.0"
+  version "1.10.0"
 
   on_macos do
     on_arm do
-      sha256 "ab2dfadc2fd85af8356bfa8e26c851e8cef6d41548013a4a3bcc32087e9afe8e"
+      sha256 "778ceececdd3b2bf2070a0bf046e6fafe436d49e45f9daab7f23ea3f5516b8d0"
       url "https://github.com/adericbourg/env-starter/releases/download/v#{version}/env-starter_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "780d85d8995ac6b8ef654bab625558e97c05c6b067cfb96b39079d41b091792e"
+      sha256 "de12b2c2a5427bbfe7317be211b3fdf5f68e1adbcba6c9c58a344aa0300a7365"
       url "https://github.com/adericbourg/env-starter/releases/download/v#{version}/env-starter_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "ad2e227deda5f16129edc0ad81d65ca1eb14a14405c86cc2428a002a1cdcb727"
+      sha256 "7bf73f025927e67654ac0fef3ca9491598d60a776ea3399e54f2f4cb7980fe8f"
       url "https://github.com/adericbourg/env-starter/releases/download/v#{version}/env-starter_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b75d10b9034816b7c41e3162baa31be8ce086674a481caf6f7418d88648450de"
+      sha256 "901eb86ef8dec6a86bf35f71deb9ec23594a542818fb7943c7e135976651b7d4"
       url "https://github.com/adericbourg/env-starter/releases/download/v#{version}/env-starter_#{version}_linux_amd64.tar.gz"
     end
   end
