@@ -12,6 +12,7 @@ cask "ionized-bar" do
     strategy :github_latest
   end
 
+  conflicts_with cask: "ionized-bar-nightly"
   depends_on arch: :arm64
   depends_on macos: :golden_gate
 

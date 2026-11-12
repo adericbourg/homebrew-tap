@@ -35,6 +35,7 @@ Homebrew resolves the tap automatically from the qualified `<user>/<tap>/<token>
 | [`madsister`](https://github.com/adericbourg/madsister) | Turns a song into an editable, printable chord grid (macOS, Apple silicon) | `brew install --cask adericbourg/tap/madsister` |
 | [`madsister-snapshot`](https://github.com/adericbourg/madsister) | Latest unreleased build of madsister, installs next to it | `brew install --cask adericbourg/tap/madsister-snapshot` |
 | [`ionized-bar`](https://github.com/adericbourg/ionized-bar) | KDE Plasma-style taskbar for macOS that replaces the Dock (Apple silicon) | `brew install --cask adericbourg/tap/ionized-bar` |
+| [`ionized-bar-nightly`](https://github.com/adericbourg/ionized-bar) | Daily build of ionized-bar's `main`, replaces `ionized-bar` | `brew install --cask adericbourg/tap/ionized-bar-nightly` |
 
 ## Available formulae
 
@@ -64,6 +65,14 @@ GoReleaser will push an updated cask file to this tap automatically.
 [madsister](https://github.com/adericbourg/madsister) repository (the `homebrew` job) — do not edit them by hand.
 A release updates `madsister`, every push to its `main` branch updates `madsister-snapshot`. The app isn't signed:
 the casks clear the quarantine flag in `postflight`.
+
+### Updating ionized-bar and ionized-bar-nightly
+
+`version` and `sha256` in `Casks/ionized-bar.rb` and `Casks/ionized-bar-nightly.rb` are **set by workflows** of the
+[ionized-bar](https://github.com/adericbourg/ionized-bar) repository: the Release workflow updates `ionized-bar`, the
+Nightly workflow updates `ionized-bar-nightly` once a day when `main` has changed (the release `nightly-<YYYY-MM-DD>`,
+the previous one is deleted). Other fields can be edited by hand. Both casks install the same `IonizedBar.app`, so
+they conflict with each other: uninstall one before installing the other.
 
 ### Adding a new cask
 
