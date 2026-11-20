@@ -1,6 +1,6 @@
 cask "mac-compose" do
-  version "0.1.1"
-  sha256 "9654f234d25eb5bf8b85a124ec75c40172d8f94fe044f03b3245a61842f5d9fd" # set by the release workflow
+  version "0.2.0"
+  sha256 "cc654c3890503a67ffe48c642c0c889e76f0013ee7c93ee96e758db94e08a25f" # set by the release workflow
 
   url "https://github.com/adericbourg/mac-compose/releases/download/v#{version}/MacCompose-#{version}.zip"
   name "MacCompose"
