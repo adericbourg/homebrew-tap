@@ -1,6 +1,6 @@
 cask "mac-compose-nightly" do
-  version "2026-11-21"
-  sha256 "14d88d381955d7e4ac251d70fe63e1dce0ff4d1670da018fe1f6efe6621dbce8" # set by mac-compose's nightly workflow
+  version "2026-11-23"
+  sha256 "f206bdca2866902f954fbe1309daf526371468a2cc38554eb54b0764f3859603" # set by mac-compose's nightly workflow
 
   url "https://github.com/adericbourg/mac-compose/releases/download/nightly-#{version}/MacCompose-nightly-#{version}.zip"
   name "MacCompose Nightly"
