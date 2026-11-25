@@ -1,6 +1,6 @@
 cask "ionized-bar-nightly" do
   version "2026-11-25"
-  sha256 "c2887108a5437c48998fcfb082a55e21ab932c875f2225a1d0d39cb296199ceb" # set by ionized-bar's nightly workflow
+  sha256 "359f821a797454e1c53858b03dee83f464263986e4c4e0f3fc37954a2d6ef23f" # set by ionized-bar's nightly workflow
 
   url "https://github.com/adericbourg/ionized-bar/releases/download/nightly-#{version}/IonizedBar-nightly-#{version}.zip"
   name "Ionized Bar Nightly"
